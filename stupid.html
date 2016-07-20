@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<script type="text/javascript">
+	function myFunction() {
+		var image = document.getElementById("welcome");
+		if(image.src.match("lizard.png")){
+			image.src = "Bee.png";
+	
+		} else {
+			image.src = "lizard.png"
+		}
+	}
+	</script>
+</head>
+
+<body>
+
+<img src="lizard.png" id="welcome" onClick="myFunction()" />
+
+</body>
+</html>
