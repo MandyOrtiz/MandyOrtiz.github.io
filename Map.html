@@ -5,26 +5,40 @@
     <meta charset="utf-8">
     <title>Simple markers</title>
     <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
+	 body {
+		 background-image: url("https://images.unsplash.com/uploads/14110635637836178f553/dcc2ccd9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=ee15d40f5d43f62842b205b99cd87ca6");
+		 background-size:cover;
+	 }
+	 
+	 container{
+		 width:800px;
+	 }
       #map {
-        height: 100%;
+         height: 400px;
+		 width: 80%;
+		 border: dashed;
+		 border-color: #820507;
+		 border-width: 5px;
       }
+	 p {
+		 font-size:36px;
+		 text-align: center;
+		 color: AntiqueWhite;
+		 font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	 }
     </style>
   </head>
   <body>
-    <div id="map"></div>
+    <center> <div id="map"></div> </center>
     <script>
 
       function initMap() {
         var Home = {lat: 43.161, lng: -77.606};
 		var food = {lat: 42.7962, lng: -77.81661};
+		var Italy = {lat: 45.444, lng: 12.328};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 9,
+          zoom: 3,
           center: Home
         });
 
@@ -38,10 +52,18 @@
           map: map,
           title: 'The Best Pizza!'
         });
+		 var marker_three = new google.maps.Marker({
+          position: Italy,
+          map: map,
+          title: 'Where I want to travel'
+        });
       }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
     </script>
+   <footer>
+   	<p>Favorite Places</p>
+   </footer>
   </body>
 </html>
