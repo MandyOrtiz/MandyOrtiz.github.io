@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var Home = {lat: 43.161, lng: -77.606};
+		var food = {lat: 42.7962, lng: -77.81661};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: Home
+        });
+
+        var marker_one = new google.maps.Marker({
+          position: Home,
+          map: map,
+          title: 'Where I live!'
+        });
+		 var marker_two = new google.maps.Marker({
+          position: food,
+          map: map,
+          title: 'The Best Pizza!'
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    </script>
+  </body>
+</html>
