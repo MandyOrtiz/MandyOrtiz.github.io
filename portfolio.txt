@@ -6,13 +6,13 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-	   <h1>Hi, I'm Mandy.</h1>
+	   <h1>Mystwood Publishers Ltd.</h1>
 	   <div class="hero"> <!--Parent element-->
-		  <h2>Portfolio</h2> <!-- Child -->
-		  <p>I'm a high school student in New York. I enjoy dancing, drinking tea, and learing about CS.</p> <!-- Child -->
-		  <a href="#">Nice to meet you!</a> <!-- Child -->
+		  <h2>Sprout.</h2> <!-- Child -->
+		  <p>A book by J. Daniel Bedford</p> <!-- Child -->
+		  <a href="#">Read now.</a> <!-- Child -->
 	   </div>
-	   <p id="footer">&copy; Navigation/p>
+	   <p id="footer">&copy; Mystwood Publishers Limited</p>
     </body>
 </html>
 
